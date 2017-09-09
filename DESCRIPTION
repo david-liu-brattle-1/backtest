@@ -18,4 +18,4 @@ Maintainer: Daniel Gerlanc <dgerlanc@enplusadvisors.com>
 Depends: R (>= 2.10), methods, grid, lattice
 License: GPL (>= 2)
 LazyLoad: yes
-
+Suggests: testthat
