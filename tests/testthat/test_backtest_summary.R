@@ -10,7 +10,7 @@ library(backtest)
 
 load("test_backtest_summary.RData")
 
-## save(x, file = "backtest.summary.test.RData", compress = TRUE)
+## save(x, file = "test_backtest_summary.RData", compress = TRUE)
 
 bt.1 <- backtest(x, in.var = "in.var.1", ret.var = "ret.var.1", by.period = FALSE)
 bt.2 <- backtest(x, in.var = "in.var.1", ret.var = "ret.var.1", by.var = "country", by.period = FALSE)

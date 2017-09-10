@@ -10,7 +10,7 @@ library(backtest)
 
 load("test_bt_spread.RData")
 
-## save(m, n, sd, truth, file = "bt.spread.test.RData", compress = TRUE)
+## save(m, n, sd, truth, file = "test_bt_spread.RData", compress = TRUE)
 
 stopifnot(
           all(mapply(all.equal, backtest:::.bt.spread(m, n, sd), truth))

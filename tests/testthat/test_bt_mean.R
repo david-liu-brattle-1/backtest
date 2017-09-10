@@ -10,7 +10,7 @@ library(backtest)
 
 load("test_bt_mean.RData")
 
-## save(x, truth, file = "bt.mean.test.RData", compress = TRUE)
+## save(x, truth, file = "test_bt_mean.RData", compress = TRUE)
 
 stopifnot(
           isTRUE(all.equal(backtest:::.bt.mean(x), truth))

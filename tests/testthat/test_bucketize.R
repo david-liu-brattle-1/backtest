@@ -10,7 +10,7 @@ library(backtest)
 
 load("test_bucketize.RData")
 
-## save(tmp.1, tmp.1.x, tmp.1.y, truth.1, file = "bucketize.test.RData", compress = TRUE)
+## save(tmp.1, tmp.1.x, tmp.1.y, truth.1, file = "test_bucketize.RData", compress = TRUE)
 
 result.1 <- backtest:::bucketize(tmp.1, tmp.1.x, tmp.1.y, compute = length)
 

@@ -10,7 +10,7 @@ library(backtest)
 
 load("test_backtest_function.RData")
 
-## save(x, truth.1, truth.2, truth.3, truth.4.A, truth.4.B, file = "backtest.function.test.RData", compress = TRUE)
+## save(x, truth.1, truth.2, truth.3, truth.4.A, truth.4.B, file = "test_backtest_function.RData", compress = TRUE)
 
 bt.1 <- backtest(x, in.var = "in.var.1", ret.var = "ret.var.1", by.period = FALSE)
 bt.2 <- backtest(x, in.var = "in.var.1", ret.var = "ret.var.1", by.var = "country", by.period = FALSE)
