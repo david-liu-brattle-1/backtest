@@ -8,7 +8,7 @@
 
 library(backtest)
 
-load("bucketize.test.RData")
+load("test_bucketize.RData")
 
 ## save(tmp.1, tmp.1.x, tmp.1.y, truth.1, file = "bucketize.test.RData", compress = TRUE)
 

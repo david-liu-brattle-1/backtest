@@ -8,7 +8,7 @@
 
 library(backtest)
 
-load("bt.spread.test.RData")
+load("test_bt_spread.RData")
 
 ## save(m, n, sd, truth, file = "bt.spread.test.RData", compress = TRUE)
 

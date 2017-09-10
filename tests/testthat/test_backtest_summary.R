@@ -8,7 +8,7 @@
 
 library(backtest)
 
-load("backtest.summary.test.RData")
+load("test_backtest_summary.RData")
 
 ## save(x, file = "backtest.summary.test.RData", compress = TRUE)
 

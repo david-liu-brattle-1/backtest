@@ -8,7 +8,7 @@
 
 library(backtest)
 
-load("bt.mean.test.RData")
+load("test_bt_mean.RData")
 
 ## save(x, truth, file = "bt.mean.test.RData", compress = TRUE)
 

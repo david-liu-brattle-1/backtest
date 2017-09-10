@@ -9,7 +9,7 @@
 library(backtest)
 
 # save(x, true.tc, file = "backtest.totalCounts.test.RData")
-load("backtest.totalCounts.test.RData")
+load("test_backtest_totalCounts.RData")
 
 bt <- backtest(x, in.var = c("ret_12_0_m", "vim"), ret.var = "ret_0_1_y",
                by.period = FALSE, date.var = "date")
