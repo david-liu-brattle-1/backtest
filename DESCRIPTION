@@ -20,3 +20,4 @@ Depends: R (>= 3.3.2), methods, grid, lattice
 License: GPL (>= 2)
 LazyLoad: yes
 Suggests: testthat
+RoxygenNote: 6.0.0
