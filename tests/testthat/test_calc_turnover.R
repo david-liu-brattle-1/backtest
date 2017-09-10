@@ -8,9 +8,9 @@
 
 library(backtest)
 
-load("calc.turnover.test.RData")
+load("test_calc_turnover.RData")
 
-## save(x.id, x.bucket, x.date, x.truth, file = "calc.turnover.test.RData", compress = TRUE)
+## save(x.id, x.bucket, x.date, x.truth, file = "test_calc_turnover.RData", compress = TRUE)
 
 x.result <- backtest:::calc.turnover(x.id, x.bucket, x.date)
 

@@ -8,9 +8,9 @@
 
 library(backtest)
 
-load("categorize.test.RData")
+load("test_categorize.RData")
 
-## save(tmp.1, tmp.1.n, truth.1, tmp.2, truth.2, file = "categorize.test.RData", compress = TRUE)
+## save(tmp.1, tmp.1.n, truth.1, tmp.2, truth.2, file = "test_categorize.RData", compress = TRUE)
 
 result.1 <- backtest:::categorize(tmp.1, n = tmp.1.n)
 result.2 <- backtest:::categorize(tmp.2)

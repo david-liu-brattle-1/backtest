@@ -7,9 +7,9 @@
 
 library(backtest)
 
-load("calc.true.weight.test.RData")
+load("test_calc_true_weight.RData")
 
-## save(calc.data, calc.truth, file = "calc.true.weight.RData")
+## save(calc.data, calc.truth, file = "test_calc_true_weight.RData")
 
 
 result <- backtest:::calc.true.weight(calc.data, "date", "id", 2)
