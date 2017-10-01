@@ -15,3 +15,4 @@ load("test_bt_mean.RData")
 stopifnot(
           isTRUE(all.equal(backtest:::.bt.mean(x), truth))
         )
+
