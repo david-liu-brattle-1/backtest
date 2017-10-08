@@ -6,6 +6,7 @@ importFrom("methods", "new", "show")
 importFrom("stats", "as.formula", "formula", "median", "quantile",
            "reshape", "sd", "weighted.mean")
 importFrom("utils", "tail")
+import("testthat")
 
 export(
        "backtest"
