@@ -1,3 +1,4 @@
+# Assume that counts() works fine
 context("test totalCount in backtest package")
 
 library(dplyr)
