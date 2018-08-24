@@ -54,8 +54,6 @@ all but the highest and lowest buckets.}
 \item{x}{A backtest object}
 
 \item{type}{A character equal to "return", "turnover", "cumreturn", or "cumreturn.split"}
-
-\item{...}{additional parameters}
 }
 \description{
 Contains results from the backtest function.

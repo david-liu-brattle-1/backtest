@@ -12,7 +12,6 @@
 #'       \code{turnover}, respectively.
 #' @param x A backtest object
 #' @param type A character equal to "return", "turnover", "cumreturn", or "cumreturn.split"
-#' @param ... additional parameters
 setMethod(
   "plot",
   signature(x = "backtest", y = "missing"),
