@@ -8,15 +8,15 @@
 ##
 ################################################################################
 
-.bt.mean <- function(x){
-  
+.bt.mean <- function(x) {
   stopifnot(
-            is.array(x)
-            )
+    is.array(x)
+  )
 
-  x <- array(colMeans(x, na.rm = TRUE), dim = c(1, ncol(x)),
-             dimnames = list("MEAN", dimnames(x)[[2]]))
+  x <- array(colMeans(x, na.rm = TRUE),
+    dim = c(1, ncol(x)),
+    dimnames = list("MEAN", dimnames(x)[[2]])
+  )
 
   x
 }
-

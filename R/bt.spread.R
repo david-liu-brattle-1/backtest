@@ -24,27 +24,28 @@
 ## slot of "backtest" and ret.var is the return variable for which we
 ## want the standard deviation
 
-.bt.spread <- function(m, n, sd){
+.bt.spread <- function(m, n, sd) {
 
   ## subtracts the mean of highest the quantile from the mean of the
   ## lowest quantile
 
-  spread <- m[ ,dim(m)[2]] - m[ ,1]
-  
+  spread <- m[, dim(m)[2]] - m[, 1]
+
   ## calculates standard error
 
-  se <- sd[1]/sqrt(n[ ,1] + n[ ,dim(n)[2]])
-  
+  se <- sd[1] / sqrt(n[, 1] + n[, dim(n)[2]])
+
   ## 95.46% of values fall w/in 2 standard deviations
 
   ci.low <- spread - (2 * se)
   ci.high <- spread + (2 * se)
 
   result <- cbind(spread, ci.low, ci.high)
-  
-  result <- array(result, dim = dim(result), dimnames =
-                  list(dimnames(m)[[1]], c("spread", "CI(low)", "CI(high)")))
-  
+
+  result <- array(result,
+    dim = dim(result), dimnames =
+      list(dimnames(m)[[1]], c("spread", "CI(low)", "CI(high)"))
+  )
+
   result
-  
 }

@@ -1,22 +1,30 @@
 importFrom("graphics", plot)
 importFrom("grid", pushViewport, viewport, grid.text, gpar, popViewport)
-importFrom("lattice", barchart, panel.lines, panel.superpose, panel.xyplot,
-           xyplot)
-importFrom("methods", "new", "show")
+importFrom("methods", "new", "show", "callNextMethod")
 importFrom("stats", "as.formula", "formula", "median", "quantile",
            "reshape", "sd", "weighted.mean")
 importFrom("utils", "tail")
+import("ggplot2")
+importFrom("gridExtra", "grid.arrange")
+importFrom("tidyr", "gather")
+importFrom("dplyr", "group_by", "mutate", "summarise", "filter", "%>%", "select", "arrange", "ungroup")
+importFrom("dplyr", "group_by_", "mutate_", "summarise_", "filter_", "select_", "arrange_")
 
 export(
-       "backtest"
+       "backtest",
+	   "backtest.update"
        )
-
+S3method(filter, backtest)
+S3method(mutate, backtest)
+S3method(group_by, backtest)
+S3method(summarise, backtest)
+S3method(select, backtest)
+S3method(arrange, backtest)
 exportClasses(
               "backtest"
               )
 
 exportMethods(
-              "show",
               "summary",
               "summaryStats",
               "plot",

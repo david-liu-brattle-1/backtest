@@ -6,27 +6,32 @@
 ##
 ################################################################################
 
-if(!isGeneric("summaryStats"))
-  setGeneric("summaryStats",
-             function(object, ...) standardGeneric("summaryStats"))
+#' @aliases backtest
+setGeneric("summaryStats", function(object, ...) standardGeneric("summaryStats"))
 
-if(!isGeneric("ci"))
-  setGeneric("ci", function(object, ...) standardGeneric("ci"))
+#' @aliases backtest
+setGeneric("ci", function(object, ...) standardGeneric("ci"))
 
-if(!isGeneric("turnover"))
-  setGeneric("turnover", function(object, ...) standardGeneric("turnover"))
+#' @aliases backtest
+setGeneric("turnover", function(object, ...) standardGeneric("turnover"))
 
-if(!isGeneric("means"))
-  setGeneric("means", function(object, ...) standardGeneric("means"))
+#' @aliases backtest
+setGeneric("means", function(object, ...) standardGeneric("means"))
 
-if(!isGeneric("counts"))
-  setGeneric("counts", function(object, ...) standardGeneric("counts"))
+#' @aliases backtest
+setGeneric("counts", function(object, ...) standardGeneric("counts"))
 
-if(!isGeneric("totalCounts"))
-  setGeneric("totalCounts", function(object, ...) standardGeneric("totalCounts"))
+#' @aliases backtest
+setGeneric("totalCounts", function(object, ...) standardGeneric("totalCounts"))
 
-if(!isGeneric("marginals"))
-  setGeneric("marginals", function(object, ...) standardGeneric("marginals"))
+#' @aliases backtest
+setGeneric("marginals", function(object, ...) standardGeneric("marginals"))
 
-if(!isGeneric("naCounts"))
-  setGeneric("naCounts", function(object, ...) standardGeneric("naCounts"))
+#' @aliases backtest
+setGeneric("naCounts", function(object, ...) standardGeneric("naCounts"))
+
+#' @aliases backtest
+setGeneric("ret.stats", function(object, ...) standardGeneric("ret.stats"))
+
+#' @aliases backtest
+setGeneric("results", function(object, ...) standardGeneric("results"))

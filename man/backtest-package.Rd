@@ -14,9 +14,9 @@ portfolio-based conjectures about financial instruments
 \tabular{ll}{
 Package: \tab backtest\cr
 Type: \tab Package\cr
-Version: \tab 0.3-1\cr
-Date: \tab 2010-02-18\cr
-Depends: \tab R (>= 2.3.0), methods, grid, lattice\cr
+Version: \tab 0.4\cr
+Date: \tab 2018-08-24\cr
+Depends: \tab R (>= 2.3.0), methods, dplyr, gridExtra, tidyr, ggplot2\cr
 License: \tab GPL (>= 2)\cr
 LazyLoad: \tab yes\cr
 }
@@ -25,6 +25,7 @@ Index:
 \preformatted{
 backtest                Creating an Object of Class Backtest
 backtest-class          Class "backtest"
+backtest.update         Modify a backtest's parameters
 starmine                StarMine Rankings, 1995
 }
 
@@ -38,9 +39,10 @@ Jeff Enos <jeff@kanecap.com> and David Kane <dave@kanecap.com>,
 with contributions from Kyle Campbell
 <kyle.w.campbell@williams.edu>, Daniel Gerlanc
 <daniel@gerlanc.com>, Aaron Schwartz
-<Aaron.J.Schwartz@williams.edu>, and Daniel Suo
-<danielsuo@gmail.com>
+<Aaron.J.Schwartz@williams.edu>, Daniel Suo
+<danielsuo@gmail.com>, Alexei Colin <acolin@fas.harvard.edu>,
+Luyi Zhao <luyizhao@gmail.com>, and David Liu <davjliu@gmail.com>
 
-Maintainer: Jeff Enos <jeff@kanecap.com>
+Maintainer: David Liu <davjliu@gmail.com>
 }
 \keyword{ package }
